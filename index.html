@@ -50,39 +50,32 @@
             
             </section>
 
-            <section class="contactform">
-                <h1 class="contacrform-txt">Contact Us</h1>
-                <div class="contactform-container">  
-                    <div class="contactform-form">
-                        <form action="">
-                            <p>
-                                <label for="Fullname">Name:</label>
-                                <input type="text" name="Fullname">
-                            </p>
-                            <p>
-                                <label for="company">Company:</label>
-                                <input type="text" name="company">
-                            </p>
-                            <p>
-                                <label for="country">country:</label>
-                                <input type="text" name="country">
-                            </p>
-                            <p>
-                            <p>
-                                <label for="email">Email:</label>   
-                                <input type="email" name="email">
-                            </p>    
-                            <p>
-                                <label for="phone">Phone:</label>
-                                <input type="tel" name="phone">
-                            </p>
-                            <p class="block">
-                                <label for="message">Message:</label>
-                                <textarea name="message" id="message"  rows="5"></textarea>
-                            </p>        
-                            <button class="block" type="submit">Send</button>
-                        </form>
-                    </div>
+            <section>
+            
+                <div class="homeform">
+                    <h2>Contact Us</h2>
+                    
+                    <form class="formorder" action="procesar formulario" method="post">
+                        <label class="label"  for="name">Name:</label>
+                        <input type="text" class="field" name="name" required><br>
+        
+                        <label class="label" for="company">Company:</label>
+                        <input type="text" class="field" name="company" required><br>
+        
+                        <label class="label" for="country">Country:</label>
+                        <input type="text" class="field" name="country" required><br>
+        
+                        <label class="label" for="email">Email:</label>
+                        <input type="email" class="field" name="email" required><br>
+        
+                        <label class="label" for="phone">Phone number:</label>
+                        <input type="tel" class="field" name="phone" required><br>
+        
+                        <label class="label" for="message">Message:</label>
+                        <textarea class="field" name="message" rows="5" required></textarea><br>
+                        <input id="formsubmit" type="submit" value="Send">
+                    </form>
+                    
                 </div>
             </section>
         </main>

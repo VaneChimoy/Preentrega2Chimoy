@@ -107,7 +107,6 @@ footer{
     background-color: #d64f2d;
     align-items: center;
     justify-items: center;
-    margin-top: 0.5em;
 }
 
 footer .footer-address{
@@ -287,7 +286,7 @@ width: 50%px  ;
     grid-template-columns: 0.5fr 1fr;
 }
 
-/* .homeform{
+.homeform{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -319,9 +318,9 @@ width: 50%px  ;
     border: none;
     padding: 5px;
     
-} */
+}
 
-/* .homeform form .label   {
+.homeform form .label{
 color: white;
     font-size: 700;
     font-weight: 800;
@@ -335,7 +334,7 @@ color: white;
     margin-top: 20px;
     background-color: white;
     border-radius: 20px;
-} */
+}
 
 
 /*Product List-----------------------------------------------------------------------------------------------------*/
