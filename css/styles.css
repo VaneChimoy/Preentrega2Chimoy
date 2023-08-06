@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&display=swap');
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: white;
+    min-height: 100vh;
+}
+* button{
+    
+        font-weight: 600;
+        color: #D64F2D;
+        padding: 9px 25px;
+        margin-top: 20px;
+        background-color: white;
+        border-radius: 20px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+    
+* button:hover{
+        background-color: #D64F2D;
+        color: white;
+        transform: scale(1.1);
+    }
+
+
+/*Header-------------------------------------------------------------------------------------*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    padding: 5px;
+    background-color: white;
+    border-color: #D64F2D;
+    position: sticky;
+    top: 0;
+}
+/*Logo-----------------------------*/
+.header .logocm{
+    cursor: pointer;
+}
+
+.header .logocm img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+}
+
+.header .logocm img:hover{
+    transform: scale(1.05);
+}
+
+/*nav-----------------------------*/
+.header .nav-links{
+    list-style: none;
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.05);
+}
+.header .nav-links a:hover{
+    color: #960018;
+}
+
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.header .nav-links a{
+    font-size: 700;
+    font-weight: 600;
+    color: #D64F2D;
+    text-decoration: none;
+}
+
+/*Selector de Idioma-----------------------------*/
+.header select{
+    font-weight: 600;
+    color: #D64F2D;
+    padding: 9px 25px;
+    background-color: white;
+    border-radius: 50px;
+}
+
+/* FOOTER----------------------------------------------------------- */
+
+footer{
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "address third social"
+    "address third social"
+    "address third social";
+    height: auto;
+    width: 100%;
+    background-color: #d64f2d;
+    align-items: center;
+    justify-items: center;
+    margin-top: 0.5em;
+}
+
+footer .footer-address{
+    grid-area: address;
+    color: white;
+    place-self: center center;
+    padding: 1.5em;
+    
+}
+footer  .footer-address h3{
+    font-size: 1.5em;
+}
+
+footer .footer-address a{
+    color: white;
+    text-decoration: none
+}
+
+footer .footer-address a:hover{
+    color: #960018;
+}
+
+/*Links para externos-----------------------------*/
+
+footer .footer-third{
+    grid-area: third;
+    place-self: end center;
+}
+
+footer .footer-third ul{
+    list-style: none;
+    display: flex;
+    padding: 2em;
+    gap: 3em;
+    
+}
+
+footer .footer-third a{
+    font-size: 700;
+    font-weight: 600;
+    color: white;
+    text-decoration: none
+}
+
+footer .footer-third li:hover{
+    transform: scale(1.05);
+}
+footer .footer-third a:hover{
+    color: #960018;
+}
+
+/*Redes sociales-----------------------------*/
+footer .footer-social{
+    grid-area: social;
+    place-self: center center;
+    
+    
+}
+footer .footer-social h2{
+    font-size: 700;
+    font-weight: 500;
+    color: white;
+}
+
+footer .footer-social li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.5em;
+        
+}
+
+
+footer .footer-social img{
+    height: 50px;
+    width: auto;
+}
+
+/*Index----------------------------------------------------------------------------------------------------------------*/
+
+/*Main-------------------------------------------------------------------------------------*/
+
+
+/*Hero Section-----------------------------*/
+.herosection{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
+    margin: bottom 20px;
+    background-color: white;
+}
+
+.herosection {
+    background-image: url(../images/Hero2.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.herosection .herosectiontxt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-left: 50px;
+    
+}
+
+
+.herosection .herosectiontxt h1{
+    color: #ffffff;
+    font-size: 120px;
+    font-weight: 500;
+    text-decoration: none;   
+}
+.spanhero{
+    color: #D64F2D;
+    font-size: 120px;
+    font-weight: 500;
+    text-decoration: none;  
+}
+
+
+/*Company General information-----------------------------*/
+
+.companygeneral{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100%;
+    margin: 30px 0 30px 0;
+    background-color:#ffffff;
+
+}
+
+.companygeneral img{
+height: 90%;
+width: 50%px  ;
+}
+
+.companygeneraltxt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-left: 50px;
+
+}
+
+
+.companygeneraltxt h2{
+    color: #D64F2D;
+    font-size: xx-large;
+    font-weight: 800;
+    text-decoration: none; 
+}
+
+.companygeneraltxt p{
+    color: #D64F2D;
+    font-size: x-large;
+    font-weight: 500;
+    text-decoration: none; 
+}
+/*Formulario home-----------------------------*/
+
+.contactform{
+    height: 40vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+.contactform-form{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+/* .homeform{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #D64F2D;
+}
+
+.homeform h2{
+    color: #ffffff;
+    font-size: 100px;
+    font-weight: 500;
+    text-decoration: none; 
+    
+}
+
+.homeform .formorder{
+    display: flex;
+    flex-direction: column;
+    padding: 0 ;
+    justify-content: center;
+}
+
+.homeform form .field{
+    color: #D64F2D;
+    font-size: 700;
+    font-weight: 500;
+    text-decoration: none; 
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    
+} */
+
+/* .homeform form .label   {
+color: white;
+    font-size: 700;
+    font-weight: 800;
+    text-decoration: none; 
+}
+
+.homeform form input{
+    font-weight: 600;
+    color: #D64F2D;
+    padding: 9px 25px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+} */
+
+
+/*Product List-----------------------------------------------------------------------------------------------------*/
+
+.productshero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    background-color: white;
+}
+
+.productsherotxt h1{
+    color: #D64F2D;
+    font-size: xx-large;
+    font-weight: 800;
+    text-decoration: none; 
+}
+
+.productsherotxt p{
+    color: #D64F2D;
+    font-size: x-large;
+    font-weight: 500;
+    text-decoration: none; 
+}
+
+.productitem{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    background-color:#ffffff;
+
+    
+}
+
+.productitemreverse{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    background-color:#ffffff;
+}
+
+.productitem img{
+height: 90%;
+width: auto;
+}
+
+.productitemreverse img{
+    height: 90%;
+    width: auto;
+    }
+
+.producttxt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-left: 50px;
+
+}
+
+
+.producttxt h2{
+    color: #D64F2D;
+    font-size: xx-large;
+    font-weight: 800;
+    text-decoration: none; 
+}
+
+.producttxt p{
+    color: #D64F2D;
+    font-size: x-large;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: justify;
+    
+
+}
+
+
+/*Contactus----------------------------------------------------------------------------------------------------------*/
+
+.visitus{
+    height: 55vh;
+    width: 100%;
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.visitustxt{
+    display: flex;
+    padding:0px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.visitus h1{
+    color: #D64F2D;
+    font-size: 100px;
+    font-weight: 500;
+    text-decoration: none; 
+    padding: 50px;
+}
+
+.visitus h2{
+    color: #D64F2D;
+    font-size: 100px;
+    font-weight: 500;
+    text-decoration: none; 
+    padding: 50px;
+}
+
+.visitus p{
+    color: #D64F2D;
+    font-size: x-large;
+    font-weight: 500;
+    text-decoration: none; 
+    padding: 50px;
+}
