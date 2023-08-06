@@ -275,17 +275,6 @@ width: 50%px  ;
 }
 /*Formulario home-----------------------------*/
 
-.contactform{
-    height: 40vh;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-}
-.contactform-form{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-}
-
 .homeform{
     display: flex;
     justify-content: space-around;
@@ -472,6 +461,131 @@ width: auto;
 }
 
 /* Media Queries--------------------------------------------------------------- */
+@media (768px <= width <= 1310px) {
+    /* Header--------------------------------------------------------------------- */
+    .header{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        padding: 5px;
+        background-color: white;
+        border-color: #D64F2D;
+        position: sticky;
+        top: 0;
+    }
+    .header .logocm{
+        cursor: pointer;
+    }
+    
+    .header .logocm img{
+        height: 70px;
+        width: auto;
+        transition: all 0.3s;
+    }
+    
+    .header .logocm img:hover{
+        transform: scale(1.05);
+    }
+    
+    .header .nav-links{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header select{
+        font-weight: 600;
+        color: #D64F2D;
+        padding: 9px 25px;
+        background-color: white;
+        border-radius: 50px;
+        margin: 1em 0 1em 0;
+    }
+
+    /*Hero Section-----------------------------*/
+.herosection {
+    display: flex;
+    height: 50vh;
+    width: auto ;
+    padding: 0px;
+    margin-top: 20px;
+    margin: bottom 20px;
+    background-color: white;
+}
+
+.herosection {
+    background-image: url(../images/Hero2.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.herosection .herosectiontxt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 1em;
+    margin-left: 1em;
+    
+}
+
+
+.herosection .herosectiontxt h1{
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 500;
+    text-decoration: none;   
+}
+.spanhero{
+    color: #D64F2D;
+    font-size: 2em;
+    font-weight: 500;
+    text-decoration: none;  
+}
+/*Company general information-----------------------------*/
+
+.companygeneral{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    margin: 2em 0 2em 0;
+    background-color:#ffffff;
+
+}
+
+.companygeneral img{
+height: 300px;
+width: 50%px  ;
+}
+
+.companygeneraltxt{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-left: 50px;
+
+}
+
+
+.companygeneraltxt h2{
+    color: #D64F2D;
+    font-size: xx-large;
+    font-weight: 800;
+    text-decoration: none; 
+}
+
+.companygeneraltxt p{
+    color: #D64F2D;
+    font-size: x-large;
+    font-weight: 500;
+    text-decoration: none; 
+}
+
+    
+}
 
 @media (max-width: 767px) {
     /* Header--------------------------------------------------------------------- */
@@ -516,10 +630,10 @@ width: auto;
     }
 
     /*Hero Section-----------------------------*/
-.herosection{
+.herosection {
     display: flex;
     height: 50vh;
-    width: auto%;
+    width: auto ;
     padding: 0px;
     margin-top: 20px;
     margin: bottom 20px;
@@ -555,6 +669,188 @@ width: auto;
     font-weight: 500;
     text-decoration: none;  
 }
+
+.companygeneral{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: auto;
+    margin: 2em 0 2em 0;
+    background-color:#ffffff;
+
+}
+
+.companygeneral img{
+    height: 200px;
+    width: auto;
+    }
+
+.companygeneraltxt{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    margin-top: 60px;
+
+}
+
+
+.companygeneraltxt h2{
+    color: #D64F2D;
+    font-size: x-large;
+    font-weight: 800;
+    text-decoration: none; 
+}
+
+.companygeneraltxt p{
+    color: #D64F2D;
+    font-size: x-large;
+    font-weight: 500;
+    text-decoration: none; 
+}
+
+.homeform{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: #D64F2D;
+}
+
+.homeform h2{
+    color: #ffffff;
+    font-size: 3em;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.homeform .formorder{
+    display: flex;
+    flex-direction: column;
+    padding: 0 ;
+    justify-content: center;
+}
+
+.homeform form .field{
+    color: #D64F2D;
+    font-size: 700;
+    font-weight: 500;
+    text-decoration: none; 
+    border-radius: 20px;
+    border: none;
+    padding: 5px;
+    
+}
+
+.homeform form .label{
+color: white;
+    font-size: 700;
+    font-weight: 800;
+    text-decoration: none; 
+}
+
+.homeform form input{
+    font-weight: 600;
+    color: #D64F2D;
+    padding: 9px 25px;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+footer{
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "address"
+    "third"
+    "social";
+    height: auto;
+    width: 100%;
+    background-color: #d64f2d;
+    align-items: center;
+    justify-items: center;
+}
+
+footer .footer-address{
+    grid-area: address;
+    color: white;
+    place-self: center center;
+    padding: 1.5em;
+    
+}
+footer  .footer-address h3{
+    font-size: 1.5em;
+}
+
+footer .footer-address a{
+    color: white;
+    text-decoration: none
+}
+
+footer .footer-address a:hover{
+    color: #960018;
+}
+
+/*Links para externos-----------------------------*/
+
+footer .footer-third{
+    grid-area: third;
+    place-self: end center;
+}
+
+footer .footer-third ul{
+    list-style: none;
+    display: flex;
+    padding: 1em;
+    gap: 1em;
+    
+}
+
+footer .footer-third a{
+    font-size: 700;
+    font-weight: 600;
+    color: white;
+    text-decoration: none
+}
+
+footer .footer-third li:hover{
+    transform: scale(1.05);
+}
+footer .footer-third a:hover{
+    color: #960018;
+}
+
+/*Redes sociales-----------------------------*/
+footer .footer-social{
+    grid-area: social;
+    place-self: center center;
+    
+    
+}
+footer .footer-social h2{
+    font-size: 700;
+    font-weight: 500;
+    color: white;
+}
+
+footer .footer-social li{
+    list-style: none;
+    display: inline-block;
+    padding: 0.5em;
+        
+}
+
+
+footer .footer-social img{
+    height: 50px;
+    width: auto;
+}
+
+
 
     
 }
