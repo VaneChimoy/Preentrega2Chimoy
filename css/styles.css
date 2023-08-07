@@ -35,7 +35,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: auto;
     width: 100%;
     padding: 5px;
     background-color: white;
@@ -59,29 +59,36 @@ body{
 }
 
 /*nav-----------------------------*/
-.header .nav-links{
-    list-style: none;
-}
-
-.header .nav-links li:hover{
-    transform: scale(1.05);
-}
-.header .nav-links a:hover{
-    color: #960018;
-}
 
 
-.header .nav-links li{
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.header .nav-links a{
+.nav-link {
     font-size: 700;
     font-weight: 600;
     color: #D64F2D;
     text-decoration: none;
 }
+.navbar-brand{
+    font-size: 700;
+    font-weight: 600;
+    color: #D64F2D;
+    text-decoration: none;
+}
+.active{
+    font-size: 700;
+    font-weight: 600;
+    color: #D64F2D;
+    text-decoration: none;
+}
+
+.nav-link active{
+    font-size: 700;
+    font-weight: 600;
+    color: #D64F2D;
+    text-decoration: none;
+}
+
+
+
 
 /*Selector de Idioma-----------------------------*/
 .header select{
