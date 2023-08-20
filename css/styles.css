@@ -103,17 +103,6 @@ body{
 }
 
 
-
-
-/*Selector de Idioma-----------------------------*/
-.header select{
-    font-weight: 600;
-    color: #D64F2D;
-    padding: 9px 25px;
-    background-color: white;
-    border-radius: 50px;
-}
-
 /* FOOTER----------------------------------------------------------- */
 
 .footer{
@@ -493,11 +482,12 @@ width: auto;
 }
 
 /* Media Queries--------------------------------------------------------------- */
-@media (768px <= width <= 1310px) { 
+@media (768px <= width <= 1311px) { 
 /* Header--------------------------------------------------------------------- */
 .header{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     height: auto;
     width: 100%;
     padding: 5px;
@@ -525,16 +515,6 @@ width: auto;
     display: flex;
     flex-direction: column;
 }
-
-.header select{
-    font-weight: 600;
-    color: #D64F2D;
-    padding: 9px 25px;
-    background-color: white;
-    border-radius: 50px;
-    margin: 1em 0 1em 0;
-}
-
 
 
 /* FOOTER----------------------------------------------------------- */
@@ -927,20 +907,9 @@ text-align: justify;
     }
     
 
-    .header select{
-        font-weight: 600;
-        color: #D64F2D;
-        padding: 9px 25px;
-        background-color: white;
-        border-radius: 50px;
-        margin: 1em 0 1em 0;
-    }
-
-
-
 /* FOOTER----------------------------------------------------------- */
 
-footer{
+.footer{
     display: grid;
     grid-template-rows: 3fr;
     grid-template-columns: 1fr;
@@ -955,34 +924,34 @@ footer{
     justify-items: center;
 }
 
-footer .footer-address{
+.footerAddress{
     grid-area: address;
     color: white;
     place-self: center center;
     padding: 1.5em;
     
 }
-footer  .footer-address h3{
+.footerAddress h3{
     font-size: 1.5em;
 }
 
-footer .footer-address a{
+.footerAddress a{
     color: white;
     text-decoration: none
 }
 
-footer .footer-address a:hover{
+.footerAddress a:hover{
     color: #960018;
 }
 
 /*Links para externos-----------------------------*/
 
-footer .footer-third{
+.footerThird{
     grid-area: third;
     place-self: end center;
 }
 
-footer .footer-third ul{
+.footerThird ul{
     list-style: none;
     display: flex;
     padding: 1em;
@@ -990,34 +959,34 @@ footer .footer-third ul{
     
 }
 
-footer .footer-third a{
+.footerThird a{
     font-size: 700;
     font-weight: 600;
     color: white;
     text-decoration: none
 }
 
-footer .footer-third li:hover{
+.footerThird li:hover{
     transform: scale(1.05);
 }
-footer .footer-third a:hover{
+.footerThird a:hover{
     color: #960018;
 }
 
 /*Redes sociales-----------------------------*/
-footer .footer-social{
+.footerSocial{
     grid-area: social;
     place-self: center center;
     
     
 }
-footer .footer-social h2{
+.footerSocial h2{
     font-size: 700;
     font-weight: 500;
     color: white;
 }
 
-footer .footer-social li{
+.footerSocial li{
     list-style: none;
     display: inline-block;
     padding: 0.5em;
@@ -1025,7 +994,7 @@ footer .footer-social li{
 }
 
 
-footer .footer-social img{
+.footerSocial img{
     height: 50px;
     width: auto;
 }
