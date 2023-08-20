@@ -44,17 +44,17 @@ body{
     top: 0;
 }
 /*Logo-----------------------------*/
-.header .logocm{
+.header .headerLogocm{
     cursor: pointer;
 }
 
-.header .logocm img{
+.header .headerLogocm img{
     height: 70px;
     width: auto;
     transition: all 0.3s;
 }
 
-.header .logocm img:hover{
+.header .headerLogocm img:hover{
     transform: scale(1.05);
 }
 
@@ -67,11 +67,26 @@ body{
     color: #D64F2D;
     text-decoration: none;
 }
+
+.nav-link:hover{
+    font-size: 700;
+    font-weight: 600;
+    color:#960018;
+    text-decoration: none;
+    transform: scale(1.05);
+}
 .navbar-brand{
     font-size: 700;
     font-weight: 600;
     color: #D64F2D;
     text-decoration: none;
+}
+.navbar-brand:hover{
+    font-size: 700;
+    font-weight: 600;
+    color:#960018;
+    text-decoration: none;
+    transform: scale(1.05);
 }
 .active{
     font-size: 700;
@@ -101,7 +116,7 @@ body{
 
 /* FOOTER----------------------------------------------------------- */
 
-footer{
+.footer{
     display: grid;
     grid-template-rows: 3fr;
     grid-template-columns: 1fr 3fr 1fr;
@@ -116,34 +131,34 @@ footer{
     justify-items: center;
 }
 
-footer .footer-address{
+.footerAddress{
     grid-area: address;
     color: white;
     place-self: center center;
     padding: 1.5em;
     
 }
-footer  .footer-address h3{
+.footerAddress h3{
     font-size: 1.5em;
 }
 
-footer .footer-address a{
+.footerAddress a{
     color: white;
     text-decoration: none
 }
 
-footer .footer-address a:hover{
+.footerAddress a:hover{
     color: #960018;
 }
 
 /*Links para externos-----------------------------*/
 
-footer .footer-third{
+.footerThird{
     grid-area: third;
     place-self: end center;
 }
 
-footer .footer-third ul{
+.footerThird ul{
     list-style: none;
     display: flex;
     padding: 2em;
@@ -151,34 +166,34 @@ footer .footer-third ul{
     
 }
 
-footer .footer-third a{
+.footerThird a{
     font-size: 700;
     font-weight: 600;
     color: white;
     text-decoration: none
 }
 
-footer .footer-third li:hover{
+.footerThird li:hover{
     transform: scale(1.05);
 }
-footer .footer-third a:hover{
+.footerThird a:hover{
     color: #960018;
 }
 
 /*Redes sociales-----------------------------*/
-footer .footer-social{
+.footerSocial{
     grid-area: social;
     place-self: center center;
     
     
 }
-footer .footer-social h2{
+.footerSocial h2{
     font-size: 700;
     font-weight: 500;
     color: white;
 }
 
-footer .footer-social li{
+.footerSocial li{
     list-style: none;
     display: inline-block;
     padding: 0.5em;
@@ -186,7 +201,7 @@ footer .footer-social li{
 }
 
 
-footer .footer-social img{
+.footerSocial img{
     height: 50px;
     width: auto;
 }
@@ -211,26 +226,35 @@ footer .footer-social img{
     background-image: url(../images/Hero2.webp);
     background-size: cover;
     background-position: center;
-    
+    position: relative;   
 }
 
-.herosection .herosectiontxt{
+.herosection::before{
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: rgba(255,255,255,.15);
+}
+
+.herosection .herosectionTxt{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 60px;
     margin-left: 50px;
+    position: relative;
     
 }
 
 
-.herosection .herosectiontxt h1{
+.herosection .herosectionTxt h1{
     color: #ffffff;
     font-size: 120px;
     font-weight: 500;
-    text-decoration: none;   
+    text-decoration: none;
+    position: relative;   
 }
-.spanhero{
+.herosectionTxtSpanhero{
     color: #D64F2D;
     font-size: 120px;
     font-weight: 500;
@@ -257,7 +281,7 @@ height: 90%;
 width: 50%px  ;
 }
 
-.companygeneraltxt{
+.companygeneralTxt{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -267,14 +291,14 @@ width: 50%px  ;
 }
 
 
-.companygeneraltxt h2{
+.companygeneralTxt h2{
     color: #D64F2D;
     font-size: xx-large;
     font-weight: 800;
     text-decoration: none; 
 }
 
-.companygeneraltxt p{
+.companygeneralTxt p{
     color: #D64F2D;
     font-size: x-large;
     font-weight: 500;
@@ -298,14 +322,14 @@ width: 50%px  ;
     
 }
 
-.homeform .formorder{
+.homeform .homeformFormorder{
     display: flex;
     flex-direction: column;
     padding: 0 ;
     justify-content: center;
 }
 
-.homeform form .field{
+.homeformFormorderField{
     color: #D64F2D;
     font-size: 700;
     font-weight: 500;
@@ -316,7 +340,7 @@ width: 50%px  ;
     
 }
 
-.homeform form .label{
+.homeformFormorderLabel{
 color: white;
     font-size: 700;
     font-weight: 800;
@@ -342,16 +366,17 @@ color: white;
     height: 20vh;
     width: 100%;
     background-color: white;
+    margin-top: 2em;
 }
 
-.productsherotxt h1{
+.productsheroTxt h1{
     color: #D64F2D;
     font-size: xx-large;
     font-weight: 800;
     text-decoration: none; 
 }
 
-.productsherotxt p{
+.productsheroTxt p{
     color: #D64F2D;
     font-size: x-large;
     font-weight: 500;
@@ -423,7 +448,7 @@ width: auto;
 /*Contact us ----------------------------------------------------------------------------------------------------------*/
 
 .visitus{
-    height: 55vh;
+    height: 65vh;
     width: 100%;
     background-color:#ffffff;
     display: flex;
@@ -431,7 +456,7 @@ width: auto;
     justify-content: space-around;
 }
 
-.visitustxt{
+.visitusTxt{
     display: flex;
     padding:0px;
     text-align: left;
@@ -481,17 +506,17 @@ width: auto;
     position: sticky;
     top: 0;
 }
-.header .logocm{
+.header .headerLogocm{
     cursor: pointer;
 }
 
-.header .logocm img{
+.header .headerLogocm img{
     height: 70px;
     width: auto;
     transition: all 0.3s;
 }
 
-.header .logocm img:hover{
+.header .headerLogocm img:hover{
     transform: scale(1.05);
 }
 
@@ -514,7 +539,7 @@ width: auto;
 
 /* FOOTER----------------------------------------------------------- */
 
-footer{
+.footer{
 display: grid;
 grid-template-rows: 3fr;
 grid-template-columns: 1fr;
@@ -528,33 +553,33 @@ align-items: center;
 justify-content: space-around;
 }
 
-footer .footer-address{
+.footerAddress{
 grid-area: address;
 color: white;
 place-self: end start;
 
 }
-footer  .footer-address h3{
+.footerAddress h3{
 font-size: 1.5em;
 }
 
-footer .footer-address a{
+.footerAddress a{
 color: white;
 text-decoration: none
 }
 
-footer .footer-address a:hover{
+.footerAddress a:hover{
 color: #960018;
 }
 
 /*Links para externos-----------------------------*/
 
-footer .footer-third{
+.footerThird{
 grid-area: third;
 place-self: end center;
 }
 
-footer .footer-third ul{
+.footerThird ul{
 list-style: none;
 display: flex;
 padding: 1em;
@@ -562,34 +587,34 @@ gap: 1em;
 
 }
 
-footer .footer-third a{
+.footerThird a{
 font-size: 700;
 font-weight: 600;
 color: white;
 text-decoration: none
 }
 
-footer .footer-third li:hover{
+.footerThird li:hover{
 transform: scale(1.05);
 }
-footer .footer-third a:hover{
+.footerThird a:hover{
 color: #960018;
 }
 
 /*Redes sociales-----------------------------*/
-footer .footer-social{
+.footerSocial{
 grid-area: social;
 place-self: center center;
 
 
 }
-footer .footer-social h2{
+.footerSocial h2{
 font-size: 700;
 font-weight: 500;
 color: white;
 }
 
-footer .footer-social li{
+.footerSocial li{
 list-style: none;
 display: inline-block;
 padding: 0.5em;
@@ -597,7 +622,7 @@ padding: 0.5em;
 }
 
 
-footer .footer-social img{
+.footerSocial img{
 height: 50px;
 width: auto;
 }
@@ -621,7 +646,7 @@ background-position: center;
 
 }
 
-.herosection .herosectiontxt{
+.herosection .herosectionTxt{
 display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -631,13 +656,13 @@ margin-left: 1em;
 }
 
 
-.herosection .herosectiontxt h1{
+.herosection .herosectionTxt h1{
 color: #ffffff;
 font-size: 4em;
 font-weight: 500;
 text-decoration: none;   
 }
-.spanhero{
+.herosectionTxtSpanhero{
 color: #D64F2D;
 font-size: 2em;
 font-weight: 500;
@@ -659,7 +684,7 @@ height: 300px;
 width: auto;
 }
 
-.companygeneraltxt{
+.companygeneralTxt{
 display: flex;
 flex-direction: column;
 text-align: left;
@@ -668,14 +693,14 @@ margin-top: 60px;
 }
 
 
-.companygeneraltxt h2{
+.companygeneralTxt h2{
 color: #D64F2D;
 font-size: x-large;
 font-weight: 800;
 text-decoration: none; 
 }
 
-.companygeneraltxt p{
+.companygeneralTxt p{
 color: #D64F2D;
 font-size: x-large;
 font-weight: 500;
@@ -702,14 +727,14 @@ text-align: center;
 
 }
 
-.homeform .formorder{
+.homeform .homeformFormorder{
 display: flex;
 flex-direction: column;
 padding: 0 ;
 justify-content: center;
 }
 
-.homeform form .field{
+.homeformFormorderField{
 color: #D64F2D;
 font-size: 700;
 font-weight: 500;
@@ -720,7 +745,7 @@ padding: 5px;
 
 }
 
-.homeform form .label{
+.homeformFormorderLabel{
 color: white;
 font-size: 700;
 font-weight: 800;
@@ -747,7 +772,7 @@ background-color: white;
 padding: 1em 0 1em 0;
 }
 
-.productsherotxt h1{
+.productsheroTxt h1{
 color: #D64F2D;
 font-size: large;
 font-weight: 800;
@@ -755,7 +780,7 @@ text-decoration: none;
 text-align: center; 
 }
 
-.productsherotxt p{
+.productsheroTxt p{
 color: #D64F2D;
 font-size: large;
 font-weight: 500;
@@ -831,7 +856,7 @@ text-align: justify;
     flex-direction: column;
 }
 
-.visitustxt{
+.visitusTxt{
     display: flex;
     flex-direction: column;
     padding:0px;
@@ -881,17 +906,17 @@ text-align: justify;
         position: sticky;
         top: 0;
     }
-    .header .logocm{
+    .header .headerLogocm{
         cursor: pointer;
     }
     
-    .header .logocm img{
+    .header .headerLogocm img{
         height: 70px;
         width: auto;
         transition: all 0.3s;
     }
     
-    .header .logocm img:hover{
+    .header .headerLogocm img:hover{
         transform: scale(1.05);
     }
     
@@ -900,6 +925,7 @@ text-align: justify;
         display: flex;
         flex-direction: column;
     }
+    
 
     .header select{
         font-weight: 600;
@@ -1023,7 +1049,7 @@ footer .footer-social img{
     
 }
 
-.herosection .herosectiontxt{
+.herosection .herosectionTxt{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -1033,13 +1059,13 @@ footer .footer-social img{
 }
 
 
-.herosection .herosectiontxt h1{
+.herosection .herosectionTxt h1{
     color: #ffffff;
     font-size: 2em;
     font-weight: 500;
     text-decoration: none;   
 }
-.spanhero{
+.herosectionTxtSpanhero{
     color: #D64F2D;
     font-size: 2em;
     font-weight: 500;
@@ -1061,7 +1087,7 @@ footer .footer-social img{
     width: auto;
     }
 
-.companygeneraltxt{
+.companygeneralTxt{
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -1070,14 +1096,14 @@ footer .footer-social img{
 }
 
 
-.companygeneraltxt h2{
+.companygeneralTxt h2{
     color: #D64F2D;
     font-size: x-large;
     font-weight: 800;
     text-decoration: none; 
 }
 
-.companygeneraltxt p{
+.companygeneralTxt p{
     color: #D64F2D;
     font-size: x-large;
     font-weight: 500;
@@ -1104,14 +1130,14 @@ footer .footer-social img{
     
 }
 
-.homeform .formorder{
+.homeform .homeformFormorder{
     display: flex;
     flex-direction: column;
     padding: 0 ;
     justify-content: center;
 }
 
-.homeform form .field{
+.homeformFormorderField{
     color: #D64F2D;
     font-size: 700;
     font-weight: 500;
@@ -1122,7 +1148,7 @@ footer .footer-social img{
     
 }
 
-.homeform form .label{
+.homeformFormorderLabel{
 color: white;
     font-size: 700;
     font-weight: 800;
@@ -1149,7 +1175,7 @@ color: white;
     padding: 1em 0 1em 0;
 }
 
-.productsherotxt h1{
+.productsheroTxt h1{
     color: #D64F2D;
     font-size: large;
     font-weight: 800;
@@ -1157,7 +1183,7 @@ color: white;
     text-align: center; 
 }
 
-.productsherotxt p{
+.productsheroTxt p{
     color: #D64F2D;
     font-size: large;
     font-weight: 500;
@@ -1233,7 +1259,7 @@ max-width: 350px;
         flex-direction: column;
     }
     
-    .visitustxt{
+    .visitusTxt{
         display: flex;
         flex-direction: column;
         padding:0px;
