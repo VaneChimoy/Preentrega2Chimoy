@@ -1,0 +1,111 @@
+// INDEX
+.herosection{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    padding: 0px;
+    margin-top: 20px;
+    margin: bottom 20px;
+    background-color: nth($colores, 2);
+    background-image: url(../images/Hero2.webp);
+    background-size: cover;
+    background-position: center;
+    
+    .herosectionTxt{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 60px;
+        margin-left: 50px;
+        
+        h1{
+            color: nth($colores, 2);
+            font-size: 8em;
+            font-weight: 500;
+            text-decoration: none;
+            
+            
+            span{
+                color: nth($colores, 1);
+                font-size: 1.4em;
+                font-weight: 500;
+                text-decoration: none;  
+
+            }
+        }
+    }
+}
+
+.companygeneral{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100%;
+    margin: 30px 0 30px 0;
+    background-color:#ffffff;
+    img{
+        height: 90%;
+        width: 50%px  ;
+    }
+    .companygeneralTxt{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 60px;
+        margin-left: 50px;
+        h2{
+            color: nth($colores, 1);
+            font-size: xx-large;
+            font-weight: 800;
+            text-decoration: none; 
+
+        }
+        p{
+            color: nth($colores, 1);
+            font-size: x-large;
+            font-weight: 500;
+            text-decoration: none; 
+
+        }
+    }
+}
+
+// CONTACT US
+
+.visitus{
+    height: 65vh;
+    width: 100%;
+    background-color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .visitusTxt{
+        display: flex;
+        padding:0px;
+        text-align: left;
+        justify-content: center;
+        align-items: center;
+        h2{
+            color: nth($colores, 1);
+            font-size: 100px;
+            font-weight: 500;
+            text-decoration: none; 
+            padding: 50px;
+        }
+        p{
+            color: nth($colores, 1);
+            font-size: x-large;
+            font-weight: 500;
+            text-decoration: none; 
+            padding: 50px;
+        }
+
+    }
+    
+
+
+}
+
+

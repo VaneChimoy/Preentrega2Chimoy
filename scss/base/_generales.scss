@@ -1,0 +1,190 @@
+// TIPOGRAFIA
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&display=swap');
+*{
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+// BODY
+body{
+    background-color: nth($colores, 2);
+    min-height: 100vh;
+}
+// BOTONES
+* button{
+    
+        font-weight: 600;
+        color: nth($colores, 1);
+        padding: 9px 25px;
+        margin-top: 20px;
+        background-color: nth($colores, 2);
+        border-radius: 20px;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+    
+* button:hover{
+        background-color: nth($colores, 1);
+        color: nth($colores, 2);
+        transform: scale(1.1);
+    }
+
+
+// Nav Links 
+.header .nav-links{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+// FORMULARIO
+.homeform{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background-color: nth($colores, 1);
+    h2{
+        color: #ffffff;
+        font-size: 100px;
+        font-weight: 500;
+        text-decoration: none; 
+
+    }
+    .homeformFormorder{
+        display: flex;
+        flex-direction: column;
+        padding: 0 ;
+        justify-content: center;
+        .homeformFormorderLabel{
+            color: nth($colores, 2);
+            font-size: 700;
+            font-weight: 800;
+            text-decoration: none; 
+        }
+        .homeformFormorderField{
+            color: nth($colores, 1);
+            font-size: 700;
+            font-weight: 500;
+            text-decoration: none; 
+            border-radius: 20px;
+            border: none;
+            padding: 5px;
+        }
+        input{
+            font-weight: 600;
+            color: nth($colores, 1);
+            padding: 9px 25px;
+            margin-top: 20px;
+            background-color: nth($colores, 2);
+            border-radius: 20px;
+
+        }
+    }
+}
+
+// PRODUCT LIST
+
+
+.productshero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    background-color: nth($colores, 2);
+    margin-top: 2em;
+    .productsheroTxt{
+        h1{
+            color: nth($colores, 1);
+            font-size: xx-large;
+            font-weight: 800;
+            text-decoration: none;
+
+        }
+        p{
+            color: nth($colores, 1);
+            font-size: x-large;
+            font-weight: 500;
+            text-decoration: none; 
+        }
+
+    }
+}
+
+.productitem{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    background-color:#ffffff;
+    
+    img{
+        height: 90%;
+        width: auto;
+    }
+    .producttxt{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 60px;
+        margin-left: 50px;
+        h2{
+            color: nth($colores, 1);
+            font-size: xx-large;
+            font-weight: 800;
+            text-decoration: none; 
+
+        }
+        p{
+            color: nth($colores, 1);
+            font-size: x-large;
+            font-weight: 500;
+            text-decoration: none;
+            text-align: justify;
+        }
+
+    }
+}
+
+.productitemreverse{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    background-color:#ffffff;
+    img{
+        height: 90%;
+        width: auto;
+    }
+    .producttxt{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 60px;
+        margin-left: 50px;
+        h2{
+            color: nth($colores, 1);
+            font-size: xx-large;
+            font-weight: 800;
+            text-decoration: none;
+        }
+        p{
+            color: nth($colores, 1);
+            font-size: x-large;
+            font-weight: 500;
+            text-decoration: none;
+            text-align: justify;
+        }
+
+    }
+}

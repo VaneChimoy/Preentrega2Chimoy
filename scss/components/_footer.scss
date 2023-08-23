@@ -1,0 +1,82 @@
+.footer{
+    display: grid;
+    grid-template-rows: 3fr;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    "address third social"
+    "address third social"
+    "address third social";
+    height: auto;
+    width: 100%;
+    background-color: nth($colores, 1);
+    align-items: center;
+    justify-items: center;
+
+    .footerAddress{
+        grid-area: address;
+        color: nth($colores, 2);
+        place-self: center center;
+        padding: 1.5em;
+
+        h3{
+            font-size: 1.5em;
+        }
+        p{
+            font-size: 1em;
+        }
+
+        a{
+            color: nth($colores, 2);
+            text-decoration: none
+        }
+    }
+
+
+    .footerThird{
+        grid-area: third;
+        place-self: end center;
+        ul{
+            list-style: none;
+            display: flex;
+            padding: 2em;
+            gap: 3em;
+            li{
+                &:hover{
+                    transform: scale(1.05);
+                }
+                a{
+                    font-size: 700;
+                    font-weight: 600;
+                    color: nth($colores, 2);
+                    text-decoration: none;
+                    &:hover{
+                        color: nth($colores, 3);
+                    }
+
+                }
+            }
+        }
+    }
+    .footerSocial{
+        grid-area: social;
+        place-self: center center;
+        ul{
+            
+            h2{
+                font-size: 700;
+                font-weight: 500;
+                color: nth($colores, 2);
+            }
+            li{
+                list-style: none;
+                display: inline-block;
+                padding: 0.5em;
+
+                img{
+                    height: 50px;
+                    width: auto;
+                }
+            }
+        }
+    }
+}   

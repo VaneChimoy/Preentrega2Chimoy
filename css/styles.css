@@ -142,7 +142,8 @@ body{
 
 /*Links para externos-----------------------------*/
 
-.footerThird{
+.footerThird{   
+    
     grid-area: third;
     place-self: end center;
 }
@@ -330,7 +331,7 @@ width: 50%px  ;
 }
 
 .homeformFormorderLabel{
-color: white;
+    color: white;
     font-size: 700;
     font-weight: 800;
     text-decoration: none; 
