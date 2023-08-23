@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&display=swap");
+.productitem .producttxt, .productitemreverse .producttxt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 60px;
+  margin-left: 50px; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -98,23 +105,17 @@ body {
   .productitem img {
     height: 90%;
     width: auto; }
-  .productitem .producttxt {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 60px;
-    margin-left: 50px; }
-    .productitem .producttxt h2 {
-      color: #d64f2d;
-      font-size: xx-large;
-      font-weight: 800;
-      text-decoration: none; }
-    .productitem .producttxt p {
-      color: #d64f2d;
-      font-size: x-large;
-      font-weight: 500;
-      text-decoration: none;
-      text-align: justify; }
+  .productitem .producttxt h2 {
+    color: #d64f2d;
+    font-size: xx-large;
+    font-weight: 800;
+    text-decoration: none; }
+  .productitem .producttxt p {
+    color: #d64f2d;
+    font-size: x-large;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: justify; }
 
 .productitemreverse {
   display: flex;
@@ -128,23 +129,17 @@ body {
   .productitemreverse img {
     height: 90%;
     width: auto; }
-  .productitemreverse .producttxt {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-top: 60px;
-    margin-left: 50px; }
-    .productitemreverse .producttxt h2 {
-      color: #d64f2d;
-      font-size: xx-large;
-      font-weight: 800;
-      text-decoration: none; }
-    .productitemreverse .producttxt p {
-      color: #d64f2d;
-      font-size: x-large;
-      font-weight: 500;
-      text-decoration: none;
-      text-align: justify; }
+  .productitemreverse .producttxt h2 {
+    color: #d64f2d;
+    font-size: xx-large;
+    font-weight: 800;
+    text-decoration: none; }
+  .productitemreverse .producttxt p {
+    color: #d64f2d;
+    font-size: x-large;
+    font-weight: 500;
+    text-decoration: none;
+    text-align: justify; }
 
 .header {
   display: flex;

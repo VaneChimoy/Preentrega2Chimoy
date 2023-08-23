@@ -272,11 +272,8 @@
             max-width: 350px;
         }
         .producttxt{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-top: 60px;
-            margin-left: 50px;
+            @extend %textodeproductos;
+
             h2{
                 color: nth($colores, 1);
                 font-size: xx-large;
@@ -310,11 +307,8 @@
             max-width: 350px;
         }
         .producttxt{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-top: 60px;
-            margin-left: 50px;
+            @extend %textodeproductos;
+
             h2{
                 color: nth($colores, 1);
                 font-size: xx-large;
@@ -641,11 +635,8 @@
             max-width: 350px;
         }
         .producttxt{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-top: 60px;
-            margin-left: 50px;
+            @extend %textodeproductos;
+
             h2{
                 color: nth($colores, 1);
                 font-size: xx-large;
@@ -679,11 +670,7 @@
             max-width: 350px;
         }
         .producttxt{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            margin-top: 60px;
-            margin-left: 50px;
+            @extend %textodeproductos;
             h2{
                 color: nth($colores, 1);
                 font-size: xx-large;

@@ -6,9 +6,19 @@ white,
 #960018;
 
 
-nth($colores, 1);
-nth($colores, 2);
-nth($colores, 3);
+// EXTEND
+%textodeproductos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 60px;
+    margin-left: 50px;
+
+}
+
+// MIXIN
+
+
 
 
 
