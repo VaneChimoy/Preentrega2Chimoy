@@ -6,7 +6,9 @@
     "address third social"
     "address third social"
     "address third social";
-    @include footer(100%, nth($colores,1), center, space-around);
+    @include footer(auto, 100%, nth($colores,1), center, space-around);
+
+}
 
     .footerAddress{
         grid-area: address;
@@ -26,6 +28,7 @@
             text-decoration: none
         }
     }
+
 
 
     .footerThird{
@@ -74,5 +77,4 @@
                 }
             }
         }
-    }
-}   
+    }   

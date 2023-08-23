@@ -32,7 +32,7 @@
         grid-template-areas: 
         "address third"
         "address social";
-        @include footer(100%, nth($colores,1), center, space-around);
+        @include footer(auto, 100%, nth($colores,1), center, space-around);
 
         .footerAddress{
             grid-area: address;
@@ -235,10 +235,11 @@
         .productsheroTxt{
             h1{
                 color: nth($colores, 1);
-                font-size: large;
+                font-size: xx-large;
                 font-weight: 800;
                 text-decoration: none;
                 text-align: center; 
+        
 
             }
             p{
@@ -268,7 +269,11 @@
             max-width: 350px;
         }
         .producttxt{
-            @extend %textodeproductos;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 60px;
+            margin-left: 50px;
 
             h2{
                 color: nth($colores, 1);
@@ -303,7 +308,11 @@
             max-width: 350px;
         }
         .producttxt{
-            @extend %textodeproductos;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 60px;
+            margin-left: 50px;
 
             h2{
                 color: nth($colores, 1);
@@ -393,7 +402,7 @@
         "address"
         "third"
         "social";
-        @include footer(100%, nth($colores,1), center, space-around);
+        @include footer(auto, 100%, nth($colores,1), center, space-around);
 
         .footerAddress{
             grid-area: address;
@@ -594,7 +603,7 @@
         .productsheroTxt{
             h1{
                 color: nth($colores, 1);
-                font-size: xxlarge;
+                font-size: xx-large;
                 font-weight: 800;
                 text-decoration: none;
                 text-align: center; 
@@ -627,7 +636,11 @@
             max-width: 350px;
         }
         .producttxt{
-            @extend %textodeproductos;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 60px;
+            margin-left: 50px;
 
             h2{
                 color: nth($colores, 1);
@@ -662,7 +675,11 @@
             max-width: 350px;
         }
         .producttxt{
-            @extend %textodeproductos;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-top: 60px;
+            margin-left: 50px;
             h2{
                 color: nth($colores, 1);
                 font-size: xx-large;
