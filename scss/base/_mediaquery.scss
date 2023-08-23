@@ -32,11 +32,7 @@
         grid-template-areas: 
         "address third"
         "address social";
-        height: auto;
-        width: 100%;
-        background-color: nth($colores, 1);
-        align-items: center;
-        justify-content: space-around;
+        @include footer(100%, nth($colores,1), center, space-around);
 
         .footerAddress{
             grid-area: address;
@@ -397,11 +393,7 @@
         "address"
         "third"
         "social";
-        height: auto;
-        width: 100%;
-        background-color: nth($colores, 1);
-        align-items: center;
-        justify-items: center;
+        @include footer(100%, nth($colores,1), center, space-around);
 
         .footerAddress{
             grid-area: address;

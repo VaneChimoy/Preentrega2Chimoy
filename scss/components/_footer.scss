@@ -6,11 +6,7 @@
     "address third social"
     "address third social"
     "address third social";
-    height: auto;
-    width: 100%;
-    background-color: nth($colores, 1);
-    align-items: center;
-    justify-items: center;
+    @include footer(100%, nth($colores,1), center, space-around);
 
     .footerAddress{
         grid-area: address;

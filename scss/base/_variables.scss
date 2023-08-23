@@ -18,6 +18,15 @@ white,
 
 // MIXIN
 
+@mixin footer ($height, $width, $backround, $align, $justify){
+    height: $height;
+    width: $width;
+    background-color: $backround;
+    align-items: $align;
+    justify-content: $justify;
+
+}
+
 
 
 
