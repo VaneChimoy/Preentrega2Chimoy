@@ -14,7 +14,7 @@
   font-size: 20px; }
 
 body {
-  background-color: w white;
+  background-color: white;
   min-height: 100vh; }
 
 * button {
@@ -22,14 +22,14 @@ body {
   color: #d64f2d;
   padding: 9px 25px;
   margin-top: 20px;
-  background-color: w white;
+  background-color: white;
   border-radius: 20px;
   transition: all 0.3s ease 0s;
   cursor: pointer; }
 
 * button:hover {
   background-color: #d64f2d;
-  color: w white;
+  color: white;
   transform: scale(1.1); }
 
 .header .nav-links {
@@ -54,7 +54,7 @@ body {
     padding: 0;
     justify-content: center; }
     .homeform .homeformFormorder .homeformFormorderLabel {
-      color: w white;
+      color: white;
       font-size: 700;
       font-weight: 800;
       text-decoration: none; }
@@ -71,7 +71,7 @@ body {
       color: #d64f2d;
       padding: 9px 25px;
       margin-top: 20px;
-      background-color: w white;
+      background-color: white;
       border-radius: 20px; }
 
 .productshero {
@@ -80,7 +80,7 @@ body {
   justify-content: center;
   height: 20vh;
   width: 100%;
-  background-color: w white;
+  background-color: white;
   margin-top: 2em; }
   .productshero .productsheroTxt h1 {
     color: #d64f2d;
@@ -148,7 +148,7 @@ body {
   height: auto;
   width: 100%;
   padding: 5px;
-  background-color: w white;
+  background-color: white;
   border-color: #d64f2d;
   position: sticky;
   top: 0; }
@@ -206,7 +206,7 @@ body {
   padding: 0px;
   margin-top: 20px;
   margin: bottom 20px;
-  background-color: w white;
+  background-color: white;
   background-image: url(../images/Hero2.webp);
   background-size: cover;
   background-position: center; }
@@ -217,7 +217,7 @@ body {
     margin-top: 60px;
     margin-left: 50px; }
     .herosection .herosectionTxt h1 {
-      color: w white;
+      color: white;
       font-size: 8em;
       font-weight: 500;
       text-decoration: none; }
@@ -295,7 +295,7 @@ body {
 
 .footerAddress {
   grid-area: address;
-  color: w white;
+  color: white;
   place-self: center center;
   padding: 1.5em; }
   .footerAddress h3 {
@@ -303,7 +303,7 @@ body {
   .footerAddress p {
     font-size: 1em; }
   .footerAddress a {
-    color: w white;
+    color: white;
     text-decoration: none; }
 
 .footerThird {
@@ -319,7 +319,7 @@ body {
     .footerThird ul li a {
       font-size: 700;
       font-weight: 600;
-      color: w white;
+      color: white;
       text-decoration: none; }
       .footerThird ul li a:hover {
         color: #960018; }
@@ -330,7 +330,7 @@ body {
   .footerSocial ul h2 {
     font-size: 700;
     font-weight: 500;
-    color: w white; }
+    color: white; }
   .footerSocial ul li {
     list-style: none;
     display: inline-block;
@@ -347,7 +347,7 @@ body {
     height: auto;
     width: 100%;
     padding: 5px;
-    background-color: w white;
+    background-color: white;
     border-color: #d64f2d;
     position: sticky;
     top: 0; }
@@ -371,14 +371,14 @@ body {
     justify-content: space-around; }
     .footer .footerAddress {
       grid-area: address;
-      color: w white;
+      color: white;
       place-self: end start; }
       .footer .footerAddress h3 {
         font-size: 1.5em; }
       .footer .footerAddress p {
         font-size: 1em; }
       .footer .footerAddress a {
-        color: w white;
+        color: white;
         text-decoration: none; }
         .footer .footerAddress a:hover {
           color: #960018; }
@@ -395,7 +395,7 @@ body {
         .footer .footerThird ul li a {
           font-size: 700;
           font-weight: 600;
-          color: w white;
+          color: white;
           text-decoration: none; }
           .footer .footerThird ul li a:hover {
             color: #960018; }
@@ -405,7 +405,7 @@ body {
       .footer .footerSocial ul h2 {
         font-size: 700;
         font-weight: 500;
-        color: w white; }
+        color: white; }
       .footer .footerSocial ul li {
         list-style: none;
         display: inline-block;
@@ -420,7 +420,7 @@ body {
     padding: 0px;
     margin-top: 20px;
     margin: bottom 20px;
-    background-color: w white;
+    background-color: white;
     background-image: url(../images/Hero2.webp);
     background-size: cover;
     background-position: center; }
@@ -484,7 +484,7 @@ body {
       padding: 0;
       justify-content: center; }
       .homeform .homeformFormorder .homeformFormorderLabel {
-        color: w white;
+        color: white;
         font-size: 700;
         font-weight: 800;
         text-decoration: none; }
@@ -501,14 +501,14 @@ body {
         color: #d64f2d;
         padding: 9px 25px;
         margin-top: 20px;
-        background-color: w white;
+        background-color: white;
         border-radius: 20px; }
   .productshero {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
-    background-color: w white;
+    background-color: white;
     padding: 1em 0 1em 0; }
     .productshero .productsheroTxt h1 {
       color: #d64f2d;
@@ -613,7 +613,7 @@ body {
     height: auto;
     width: 100%;
     padding: 5px;
-    background-color: w white;
+    background-color: white;
     border-color: #d64f2d;
     position: sticky;
     top: 0; }
@@ -637,7 +637,7 @@ body {
     justify-content: space-around; }
     .footer .footerAddress {
       grid-area: address;
-      color: w white;
+      color: white;
       place-self: center center;
       padding: 1.5em; }
       .footer .footerAddress h3 {
@@ -645,7 +645,7 @@ body {
       .footer .footerAddress p {
         font-size: 1em; }
       .footer .footerAddress a {
-        color: w white;
+        color: white;
         text-decoration: none; }
     .footer .footerThird {
       grid-area: third;
@@ -660,7 +660,7 @@ body {
         .footer .footerThird ul li a {
           font-size: 700;
           font-weight: 600;
-          color: w white;
+          color: white;
           text-decoration: none; }
           .footer .footerThird ul li a:hover {
             color: #960018; }
@@ -670,7 +670,7 @@ body {
       .footer .footerSocial ul h2 {
         font-size: 700;
         font-weight: 500;
-        color: w white; }
+        color: white; }
       .footer .footerSocial ul li {
         list-style: none;
         display: inline-block;
@@ -685,7 +685,7 @@ body {
     padding: 0px;
     margin-top: 20px;
     margin: bottom 20px;
-    background-color: w white;
+    background-color: white;
     background-image: url(../images/Hero2.webp);
     background-size: cover;
     background-position: center; }
@@ -749,7 +749,7 @@ body {
       padding: 0;
       justify-content: center; }
       .homeform .homeformFormorder .homeformFormorderLabel {
-        color: w white;
+        color: white;
         font-size: 700;
         font-weight: 800;
         text-decoration: none; }
@@ -766,14 +766,14 @@ body {
         color: #d64f2d;
         padding: 9px 25px;
         margin-top: 20px;
-        background-color: w white;
+        background-color: white;
         border-radius: 20px; }
   .productshero {
     display: flex;
     flex-direction: column;
     height: auto;
     width: 100%;
-    background-color: w white;
+    background-color: white;
     padding: 1em 0 1em 0; }
     .productshero .productsheroTxt h1 {
       color: #d64f2d;
