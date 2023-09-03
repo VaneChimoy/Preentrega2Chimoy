@@ -143,7 +143,7 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: auto;
   width: 100%;
@@ -154,12 +154,6 @@ body {
   top: 0; }
   .header .headerLogocm {
     cursor: pointer; }
-    .header .headerLogocm .headerLogocmImg {
-      height: 70px;
-      width: auto;
-      transition: all 0.3s; }
-      .header .headerLogocm .headerLogocmImg:hover {
-        transform: scale(1.05); }
 
 .nav-link {
   font-size: 700;
@@ -179,6 +173,12 @@ body {
   font-weight: 600;
   color: #d64f2d;
   text-decoration: none; }
+  .navbar-brand img {
+    height: 70px;
+    width: auto;
+    transition: all 0.3s; }
+    .navbar-brand img:hover {
+      transform: scale(1.05); }
 
 .navbar-brand:hover {
   font-size: 700;
@@ -610,7 +610,7 @@ body {
 @media (max-width: 767px) {
   .header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
     height: auto;
     width: 100%;
     padding: 5px;
@@ -618,14 +618,17 @@ body {
     border-color: #d64f2d;
     position: sticky;
     top: 0; }
-    .header .headerLogocm {
-      cursor: pointer; }
-      .header .headerLogocm .headerLogocmImg {
-        height: 70px;
-        width: auto;
-        transition: all 0.3s; }
-        .header .headerLogocm .headerLogocmImg:hover {
-          transform: scale(1.05); }
+  .navbar-brand {
+    font-size: 700;
+    font-weight: 600;
+    color: #d64f2d;
+    text-decoration: none; }
+    .navbar-brand img {
+      height: 40px;
+      width: auto;
+      transition: all 0.3s; }
+      .navbar-brand img:hover {
+        transform: scale(1.05); }
   .footer {
     display: grid;
     grid-template-rows: 3fr;

@@ -372,27 +372,31 @@
     
     .header{
         display: flex;
-        flex-direction: column;
+        justify-content: space-around;
         height: auto;
         width: 100%;
         padding: 5px;
         background-color: nth($colores, 2);
         border-color: nth($colores, 1);
         position: sticky;
-        top: 0;
-        .headerLogocm{
-            cursor: pointer;  
-
-            .headerLogocmImg{
-                height: 70px;
-                width: auto;
-                transition: all 0.3s;
-                &:hover{
-                    transform: scale(1.05);
-                }
-            }
-        }   
+        top: 0; 
     }
+
+    .navbar-brand{
+        font-size: 700;
+        font-weight: 600;
+        color: nth($colores, 1);
+        text-decoration: none;
+        img{
+            height: 40px;
+            width: auto;
+            transition: all 0.3s;
+            &:hover{
+            transform: scale(1.05);
+            }
+        }
+    
+        }
 
     .footer{
         display: grid;
