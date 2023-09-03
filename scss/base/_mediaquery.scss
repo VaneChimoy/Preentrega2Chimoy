@@ -11,6 +11,7 @@
         border-color: nth($colores, 1);
         position: sticky;
         top: 0;
+        z-index: 3;
         .headerLogocm{
             cursor: pointer;  
 
@@ -116,6 +117,7 @@
         background-image: url(../images/Hero2.webp);
         background-size: cover;
         background-position: center;
+
         
         .herosectionTxt{
             display: flex;
@@ -123,21 +125,14 @@
             align-items: flex-start;
             margin-top: 1em;
             margin-left: 1em;
+            position: relative;
+            z-index: 1;
             
             h1{
-                color: #ffffff;
+                color:nth($colores, 1);
                 font-size: 4em;
                 font-weight: 500;
-                text-decoration: none; 
-                
-                
-                span{
-                    color: nth($colores, 1);
-                    font-size: 1.4em;
-                    font-weight: 500;
-                    text-decoration: none;  
-    
-                }
+                text-decoration: none;               
             }
         }
     }
@@ -150,20 +145,24 @@
         width: auto;
         margin: 2em 0 2em 0;
         background-color:#ffffff;
+        
             img{
                 height: 300px;
                 width: auto;
+                z-index: 1
             }
             .companygeneralTxt{
                 display: flex;
                 flex-direction: column;
                 text-align: left;
                 margin-top: 60px;
+                z-index: 1;
                 h2{
                     color: nth($colores, 1);
                     font-size: x-large;
                     font-weight: 800;
                     text-decoration: none; 
+                
         
                 }
                 p{
@@ -171,6 +170,7 @@
                     font-size: x-large;
                     font-weight: 500;
                     text-decoration: none; 
+
                     }
         
                 }
@@ -380,6 +380,7 @@
         border-color: nth($colores, 1);
         position: sticky;
         top: 0; 
+        z-index: 3;
     }
 
     .navbar-brand{
@@ -497,22 +498,15 @@
                 margin-left: 1em;
                 
                 h1{
-                    color: #ffffff;
-                    font-size: 2em;
+                    color: nth($colores, 1);
+                    font-size: 3em;
                     font-weight: 500;
                     text-decoration: none;   
-                    
-                    
-                    span{
-                        color: nth($colores, 1);
-                        font-size: 1.5em;
-                        font-weight: 500;
-                        text-decoration: none;
         
                     }
                 }
             }
-        }
+        
 
 
     .companygeneral{
@@ -522,15 +516,18 @@
             width: auto;
             margin: 2em 0 2em 0;
             background-color:#ffffff;
+            z-index: 3;
             img{
                 height: 200px;
                 width: auto;
+                z-index: 1;
             }
             .companygeneralTxt{
                 display: flex;
                 flex-direction: column;
                 text-align: left;
                 margin-top: 60px;
+                z-index: 1;
                 h2{
                     color: nth($colores, 1);
                     font-size: x-large;
@@ -604,10 +601,11 @@
         width: 100%;
         background-color: nth($colores, 2);
         padding: 1em 0 1em 0;
+        padding: 0 10px 0 10px;
         .productsheroTxt{
             h1{
                 color: nth($colores, 1);
-                font-size: xx-large;
+                font-size: x-large;
                 font-weight: 800;
                 text-decoration: none;
                 text-align: center; 
@@ -619,6 +617,7 @@
                 font-weight: 500;
                 text-decoration: none; 
                 text-align: justify;
+                padding: 0 10px 0 10px;
             }
 
         }
@@ -648,17 +647,19 @@
 
             h2{
                 color: nth($colores, 1);
-                font-size: xx-large;
+                font-size: x-large;
                 font-weight: 800;
-                text-decoration: none; 
+                text-decoration: none;
+                padding-right: 40px; 
 
             }
             p{
                 color: nth($colores, 1);
-                font-size: x-large;
+                font-size: large;
                 font-weight: 500;
                 text-decoration: none;
                 text-align: justify;
+                padding-right: 40px;
             }
 
         }
@@ -686,16 +687,18 @@
             margin-left: 50px;
             h2{
                 color: nth($colores, 1);
-                font-size: xx-large;
+                font-size: x-large;
                 font-weight: 800;
-                text-decoration: none; 
+                text-decoration: none;
+                padding-right: 40px; 
             }
             p{
                 color: nth($colores, 1);
-                font-size: x-large;
+                font-size: large;
                 font-weight: 500;
                 text-decoration: none;
                 text-align: justify;
+                padding-right: 40px;
             }
 
         }

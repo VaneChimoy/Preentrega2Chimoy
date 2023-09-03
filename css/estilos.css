@@ -86,12 +86,14 @@ body {
     color: #d64f2d;
     font-size: xx-large;
     font-weight: 800;
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: center; }
   .productshero .productsheroTxt p {
     color: #d64f2d;
     font-size: x-large;
     font-weight: 500;
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: justify; }
 
 .productitem {
   display: flex;
@@ -151,7 +153,8 @@ body {
   background-color: white;
   border-color: #d64f2d;
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 3; }
   .header .headerLogocm {
     cursor: pointer; }
 
@@ -210,22 +213,27 @@ body {
   background-image: url(../images/Hero2.webp);
   background-size: cover;
   background-position: center; }
+  .herosection::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 0;
+    opacity: 0.4; }
   .herosection .herosectionTxt {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 60px;
-    margin-left: 50px; }
+    margin-left: 50px;
+    position: relative;
+    z-index: 1; }
     .herosection .herosectionTxt h1 {
-      color: white;
+      color: #d64f2d;
       font-size: 8em;
       font-weight: 500;
       text-decoration: none; }
-      .herosection .herosectionTxt h1 span {
-        color: #d64f2d;
-        font-size: 1em;
-        font-weight: 500;
-        text-decoration: none; }
 
 .companygeneral {
   display: flex;
@@ -351,7 +359,8 @@ body {
     background-color: white;
     border-color: #d64f2d;
     position: sticky;
-    top: 0; }
+    top: 0;
+    z-index: 3; }
     .header .headerLogocm {
       cursor: pointer; }
       .header .headerLogocm .headerLogocmImg {
@@ -430,17 +439,14 @@ body {
       flex-direction: column;
       align-items: flex-start;
       margin-top: 1em;
-      margin-left: 1em; }
+      margin-left: 1em;
+      position: relative;
+      z-index: 1; }
       .herosection .herosectionTxt h1 {
-        color: #ffffff;
+        color: #d64f2d;
         font-size: 4em;
         font-weight: 500;
         text-decoration: none; }
-        .herosection .herosectionTxt h1 span {
-          color: #d64f2d;
-          font-size: 1.4em;
-          font-weight: 500;
-          text-decoration: none; }
   .companygeneral {
     display: flex;
     flex-direction: column;
@@ -450,12 +456,14 @@ body {
     background-color: #ffffff; }
     .companygeneral img {
       height: 300px;
-      width: auto; }
+      width: auto;
+      z-index: 1; }
     .companygeneral .companygeneralTxt {
       display: flex;
       flex-direction: column;
       text-align: left;
-      margin-top: 60px; }
+      margin-top: 60px;
+      z-index: 1; }
       .companygeneral .companygeneralTxt h2 {
         color: #d64f2d;
         font-size: x-large;
@@ -617,7 +625,8 @@ body {
     background-color: white;
     border-color: #d64f2d;
     position: sticky;
-    top: 0; }
+    top: 0;
+    z-index: 3; }
   .navbar-brand {
     font-size: 700;
     font-weight: 600;
@@ -700,30 +709,28 @@ body {
       margin-top: 1em;
       margin-left: 1em; }
       .herosection .herosectionTxt h1 {
-        color: #ffffff;
-        font-size: 2em;
+        color: #d64f2d;
+        font-size: 3em;
         font-weight: 500;
         text-decoration: none; }
-        .herosection .herosectionTxt h1 span {
-          color: #d64f2d;
-          font-size: 1.5em;
-          font-weight: 500;
-          text-decoration: none; }
   .companygeneral {
     display: flex;
     flex-direction: column;
     height: auto;
     width: auto;
     margin: 2em 0 2em 0;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    z-index: 3; }
     .companygeneral img {
       height: 200px;
-      width: auto; }
+      width: auto;
+      z-index: 1; }
     .companygeneral .companygeneralTxt {
       display: flex;
       flex-direction: column;
       text-align: left;
-      margin-top: 60px; }
+      margin-top: 60px;
+      z-index: 1; }
       .companygeneral .companygeneralTxt h2 {
         color: #d64f2d;
         font-size: x-large;
@@ -778,10 +785,11 @@ body {
     height: auto;
     width: 100%;
     background-color: white;
-    padding: 1em 0 1em 0; }
+    padding: 1em 0 1em 0;
+    padding: 0 10px 0 10px; }
     .productshero .productsheroTxt h1 {
       color: #d64f2d;
-      font-size: xx-large;
+      font-size: x-large;
       font-weight: 800;
       text-decoration: none;
       text-align: center; }
@@ -790,7 +798,8 @@ body {
       font-size: large;
       font-weight: 500;
       text-decoration: none;
-      text-align: justify; }
+      text-align: justify;
+      padding: 0 10px 0 10px; }
   .productitem {
     display: flex;
     flex-direction: column;
@@ -812,15 +821,17 @@ body {
       margin-left: 50px; }
       .productitem .producttxt h2 {
         color: #d64f2d;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: 800;
-        text-decoration: none; }
+        text-decoration: none;
+        padding-right: 40px; }
       .productitem .producttxt p {
         color: #d64f2d;
-        font-size: x-large;
+        font-size: large;
         font-weight: 500;
         text-decoration: none;
-        text-align: justify; }
+        text-align: justify;
+        padding-right: 40px; }
   .productitemreverse {
     display: flex;
     flex-direction: column;
@@ -842,15 +853,17 @@ body {
       margin-left: 50px; }
       .productitemreverse .producttxt h2 {
         color: #d64f2d;
-        font-size: xx-large;
+        font-size: x-large;
         font-weight: 800;
-        text-decoration: none; }
+        text-decoration: none;
+        padding-right: 40px; }
       .productitemreverse .producttxt p {
         color: #d64f2d;
-        font-size: x-large;
+        font-size: large;
         font-weight: 500;
         text-decoration: none;
-        text-align: justify; }
+        text-align: justify;
+        padding-right: 40px; }
   .visitus {
     height: auto;
     width: 100%;
