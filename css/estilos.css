@@ -210,7 +210,7 @@ body {
   margin-top: 20px;
   margin: bottom 20px;
   background-color: white;
-  background-image: url(../../images/hero2.webp);
+  background-image: url(../images/hero2.webp);
   background-size: cover;
   background-position: center; }
   .herosection::before {
@@ -431,7 +431,7 @@ body {
     margin-top: 20px;
     margin: bottom 20px;
     background-color: white;
-    background-image: url(../../images/hero2.webp);
+    background-image: url(../images/hero2.webp);
     background-size: cover;
     background-position: center; }
     .herosection .herosectionTxt {
@@ -699,7 +699,7 @@ body {
     margin-top: 20px;
     margin: bottom 20px;
     background-color: white;
-    background-image: url(../../images/hero2.webp);
+    background-image: url(../images/hero2.webp);
     background-size: cover;
     background-position: center; }
     .herosection .herosectionTxt {
