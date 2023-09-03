@@ -812,7 +812,7 @@ body {
     .productitem img {
       height: 90%;
       width: auto;
-      max-width: 340px; }
+      max-width: 300px; }
     .productitem .producttxt {
       display: flex;
       flex-direction: column;
@@ -844,7 +844,7 @@ body {
     .productitemreverse img {
       height: 90%;
       width: auto;
-      max-width: 340px; }
+      max-width: 300px; }
     .productitemreverse .producttxt {
       display: flex;
       flex-direction: column;
